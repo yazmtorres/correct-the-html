@@ -11,12 +11,25 @@
 ul,
 ol {
     list-style: none;
+    padding: 0;
 }
 
 /* Remove default link underline and inherit color */
 a {
     text-decoration: none;
     color: inherit;
+}
+
+/* Ensure consistent appearance for semantic elements */
+header,
+main,
+article,
+footer,
+section,
+nav,
+aside,
+figure {
+    display: block;
 }
 
 /* Set a consistent base font size and line-height */
@@ -51,13 +64,20 @@ select {
 /* Remove default button styling and ensure pointer cursor */
 button {
     cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: inherit;
+}
+
+/* Ensure `figure` elements have consistent spacing */
+figure {
+    margin: 0;
 }
 
 /* Set a consistent default for body */
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed; /* Enhance text rendering for better performance */
-    line-height: 1.5;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
